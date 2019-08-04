@@ -7,11 +7,9 @@ import java.util.Random;
 
 public class MainClass {
     public static void main(String[] args) {
-//        String dirName = System.getProperty("java.io.tmpdir");
-        String dirName = "C:\\Temp";
+        String dirName = System.getProperty("java.io.tmpdir");
         final int quantityOfFiles = 20;
-        final double maxSize = 1.5 * 1e6;
-//        final double maxSize = 1e9;
+        final double maxSize = 1e9;
         for (int i = 1; i <= quantityOfFiles; i++) {
             int finalI = i;
             new Thread(() -> {
